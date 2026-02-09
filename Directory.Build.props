@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup Condition="!$(MSBuildProjectName.Contains('Tests'))">
+
+    <!-- 统一构建产物根目录 -->
+    <ArtifactsPath>$(MSBuildThisFileDirectory)dlls\</ArtifactsPath>
+
+    <!-- 覆盖 bin 目录，所有项目输出到统一位置 -->
+    <BaseOutputPath>$(ArtifactsPath)</BaseOutputPath>
+
+    <!-- 统一 obj 目录，按项目名区分避免冲突 -->
+    <BaseIntermediateOutputPath>$(ArtifactsPath)obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+
+    <!-- 输出路径保留 TargetFramework（防止多框架覆盖） -->
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+
+    <!-- 不附加 RuntimeIdentifier（避免 win-x64 等子目录） -->
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+  </PropertyGroup>
+</Project>

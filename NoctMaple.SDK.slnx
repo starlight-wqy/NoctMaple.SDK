@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/NoctMaple.SDK.Abstractions/NoctMaple.SDK.Abstractions.csproj" Id="474a9934-548b-45c1-8914-494f68ac4665" />
+  <Project Path="src/NoctMaple.SDK.Logging/NoctMaple.SDK.Logging.csproj" Id="0df80939-e368-477c-a795-1c89543e220e" />
+  <Project Path="src/NoctMaple.SDK.Shared/NoctMaple.SDK.Shared.csproj" Id="cdd1c84b-75a2-4582-99d3-ee8b7f72b956" />
+  <Project Path="tests/NoctMaple.SDK.Utils.Tests/NoctMaple.SDK.Utils.Tests.csproj" Id="5d4eeef8-9a73-46d0-a5ed-7938ce3068f7" />
+</Solution>
