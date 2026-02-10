@@ -1,0 +1,1 @@
+The SDK is developed based on .NET 10.
